@@ -72,9 +72,9 @@ nav {
 	flex-direction: column;
 	justify-content: space-around;
 	list-style: none;
-	background-color: none;
 	color: black;
 }
+
 
 .navigation a {
 	display: none;
