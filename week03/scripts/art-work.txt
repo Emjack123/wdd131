@@ -1,0 +1,23 @@
+SQL command are:
+CREATE
+SELECT
+UPDATE
+DELETE
+INSERT
+
+data require are:
+artist_id, title,year, period,description,type, location,donate,file
+
+CREATE table artist (artist_id NOT NULL AUTO_INCREMENT,);
+
+SELECT * FROM artist;
+
+UPDATE artist;
+set f_name = "mary";
+where artist_id = "1";
+
+DELETE FROM artist;
+where artist_id "1"
+
+INSERT INTO art_work (artist_id, title,year, period,description,type, location,donate,file)
+VALUE (1,"binding of sampson","1636","baroque","sampson.jpg")

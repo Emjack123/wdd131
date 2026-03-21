@@ -1,0 +1,59 @@
+
+
+
+
+
+.social {
+    background-color: navy;
+    justify-items: center;
+    color: white;
+    margin: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+   .weather {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        color:white;
+        align-items:flex-end;
+        
+    }
+        
+    
+        
+         
+    
+        
+
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+
+
+    
+ 
+
+    
+
+    
+
+
+
+
+
+
+    
