@@ -152,9 +152,23 @@ function createTempleCard() {
   createTempleCard(smallTemples);
 });
 
+const oldTemples = document.querySelector("#old");
+  oldTemples.addEventListener("click", () => {
+  const oldTemples = temples.filter(temples => temples.location.includes("Utah"));
+  createTempleCard(oldTemples);
+})
 
+  const largeTemples = document.querySelector("#large");
+  largeTemples.addEventListener("click", () => {
+  const largeTemples = temples.filter(temples => temples.location.includes("Utah"));
+  createTempleCard(largeTemples);
+});
 
-
+const newTemples = document.querySelector("#new");
+  newTemples.addEventListener("click", () => {
+  const newTemples = temples.filter(temples => temples.location.includes("Utah"));
+  createTempleCard(newTemples);
+});
 
 
 
