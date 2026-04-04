@@ -5,6 +5,7 @@
          font-style: normal;
         font-variation-settings: "width" 100;
         
+        
       }
 
 	
@@ -27,6 +28,7 @@
   .nav-menu {
     display: flex;
     list-style: none;
+    
   }
 
   .nav-menu li {
@@ -35,17 +37,17 @@
 	
   .nav-menu a {
       text-decoration: none;
-      color: white;
+      color: black;
       font-weight: 500;
-      transition: 0.3s;
    }
 
     .nav-menu a:hover {
-      color: yellow;
+      color:black;
+      background-color: white;
   }
 
 	
-/* mobile menu style*/
+/* mobile menu style at desktop view*/
 
 .menu-toggle {
 	display: none;
@@ -70,11 +72,12 @@
 
 .nav-menu {
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: -100%;
   flex-direction: column;
-  background-color: #444;
-  width: 100%;
+  background-color: lightgreen;
+  color: black;
+  width: 90%;
   text-align: center;
   transition: 0.3s;
 
