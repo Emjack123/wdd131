@@ -1,0 +1,103 @@
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 400;
+		margin-left: 0;
+		text-align: center;
+	}
+h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+		
+	}
+
+	.navigation {
+		flex-direction: row;
+		justify-content: left;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.stuff {
+		margin: 2rem auto;
+		
+	}
+	
+  #temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Individual card styling */
+  .grid-layout {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Keeps images within the border radius */
+  }
+  
+  /* Hover effect for interaction */
+  .temple-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Heading style */
+  .temple-card h3 {
+    color: #003366; /* Deep blue for a classic look */
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  /* Text details */
+  .temple-card p {
+    font-size: 0.95rem;
+    color: #444;
+    text-align: center;
+    margin: 8px 0;
+  }
+  
+  /* Image styling */
+  .temple-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images aren't stretched */
+    border-radius: 4px;
+    margin-top: 10px;
+    display: block;
+  
+  }
+  
+}
+  
+  
+  
+
+	
+		
+
+   
+   
+  
+
+
+
+
+  

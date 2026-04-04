@@ -1,0 +1,117 @@
+
+    *   {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+         font-style: normal;
+        font-variation-settings: "width" 100;
+        
+        
+      }
+
+	
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    background-color: forestgreen;
+    padding: 1rem 2rem;
+  }
+    
+	.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    
+  }
+
+  .nav-menu li {
+    padding: 0 15px;
+  }
+	
+  .nav-menu a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+   }
+
+    .nav-menu a:hover {
+      color:black;
+      background-color: white;
+  }
+
+	
+/* mobile menu style at desktop view*/
+
+.menu-toggle {
+	display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* responsive logic */
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+.nav-menu {
+  position: absolute;
+  top: 50px;
+  right: -100%;
+  flex-direction: column;
+  background-color: lightgreen;
+  color: black;
+  width: 90%;
+  text-align: center;
+  transition: 0.3s;
+
+}
+
+.nav-menu.active {
+
+right: 0; /* slides in */
+
+}
+.nav-menu li {
+  margin: 2opx 0;
+}
+
+}
+
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    background-color: forestgreen;
+}
+
+
+
+
+  
+		
+	
+
+	
+  
+  
+  
+  

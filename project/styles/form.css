@@ -1,0 +1,146 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: white;
+}
+    h2 {
+    text-align: center;
+    color: white;
+    background-color: purple;
+    margin-bottom: 2rem;
+    }
+
+
+form {
+    background: purple;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grouping and Spacing */
+.form-group {
+    margin-bottom: 1.5rem;
+    
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+select, 
+input[type="text"], 
+input[type="date"], 
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+/* Star Rating System */
+.stars {
+    display: flex;
+    flex-direction: row-reverse; /* Allows us to highlight stars to the left */
+    justify-content: flex-end;
+    gap: 1rem;
+    color:yellow;
+}
+
+.stars input {
+    display: block; /* Hide the actual radio circle */
+    align-items: center;
+    justify-content: center;
+}
+
+.stars label {
+    font-size: 1.5rem;
+    color: yellow;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    margin: 0;
+}
+    
+
+/* Change color of stars on hover and when selected */
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input:checked ~ label {
+    color: #f1c40f; /* Gold color */
+}
+
+/* Checkbox and Legend Labels */
+fieldset label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+fieldset input[type="checkbox"] {
+    margin-right: 0.8rem;
+    width: 18px;
+    height: 18px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: whitesmoke;
+    color: black;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    color: blue;
+    background-color: #f0f0f0;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    background-color: purple;
+
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+
+
+
+}
+
+
+
+
