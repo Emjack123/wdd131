@@ -51,17 +51,18 @@ nav {
 #menu {
 	font-size: 1.5rem;
 	border: 0;
-	position: absolute;
+	position:absolute;
 	color: white;
-	
 	top: 3rem;
 	right: -1rem;
 	
 }
+	
 
 #menu::before {
 	content: "☰";
 	color: black;
+	
 }
 
 #menu.open::before {
@@ -69,8 +70,8 @@ nav {
 }
 
 .navigation {
+	display: row;
 	position: absolute;
-	display: block;
 	
 	justify-content: space-around;
 	list-style: none;
@@ -79,7 +80,7 @@ nav {
 
 
 .navigation a {
-	display: none;
+	display: block;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;

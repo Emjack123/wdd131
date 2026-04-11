@@ -4,103 +4,115 @@
         font-weight: 400;
          font-style: normal;
         font-variation-settings: "width" 100;
-        
-        
-      }
-
-	
-  .navbar {
+    }
+  .header-main {
     display: flex;
     justify-content: space-between;
+	   gap: 40px;
+     color: white;
+     background-color:blue;
+     
+  }
+
+  .title {
+    text-align: center;
+    background-color: blue;
     color: white;
-    align-items: center;
-    background-color: forestgreen;
-    padding: 1rem 2rem;
-  }
-    
-	.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    color: white;
   }
 
-  .nav-menu {
-    display: flex;
-    list-style: none;
-    
-  }
-
-  .nav-menu li {
-    padding: 0 15px;
-  }
+  
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
 	
-  .nav-menu a {
-      text-decoration: none;
-      color: black;
-      font-weight: 500;
-   }
+	color: white;
+}
 
-    .nav-menu a:hover {
-      color:black;
-      background-color: white;
-  }
+#menu::before {
+	content: "≡";   
+    
+}
 
-	
-/* mobile menu style at desktop view*/
+nav {
+	background-color: green;
+  width: 100%;
+  
+  
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
 
-.menu-toggle {
+.navigation li {
 	display: none;
-  cursor: pointer;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.3s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: white;
-  transition: 0.3s;
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
 }
 
-/* responsive logic */
-
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-.nav-menu {
-  position: absolute;
-  top: 50px;
-  right: -100%;
-  flex-direction: column;
-  background-color: lightgreen;
-  color: black;
-  width: 90%;
-  text-align: center;
-  transition: 0.3s;
-
+.show li {
+	display: block;
 }
 
-.nav-menu.active {
-
-right: 0; /* slides in */
-
-}
-.nav-menu li {
-  margin: 2opx 0;
+#menu.show::before {
+	content: "X";
 }
 
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
 }
 
+ 
+
+        
+
+	
+  
 
 footer {
     margin-top: 3rem;
     text-align: center;
     font-size: 0.9rem;
     color: white;
-    background-color: forestgreen;
+    background-color: skyblue;
 }
 
 

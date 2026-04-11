@@ -1,34 +1,3 @@
-@media (min-width: 37.5em) {
-	h1 {
-		font-size: 2.5rem;
-		font-weight: 400;
-		margin-left: 0;
-		text-align: center;
-	}
-h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	#menu {
-		display: none; /* hide hamburger button */
-		
-	}
-
-	.navigation {
-		flex-direction: row;
-		justify-content: left;
-	}
-
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
-
-	.stuff {
-		margin: 2rem auto;
-		
-	}
 	
   #temple-container {
     display: grid;
@@ -85,7 +54,7 @@ h2 {
   
   }
   
-}
+
   
   
   

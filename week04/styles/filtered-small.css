@@ -52,7 +52,7 @@ nav {
 	font-size: 1.5rem;
 	border: 0;
 	
-	color: white;
+	color: rgb(152, 55, 55);
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -70,7 +70,7 @@ nav {
 
 .navigation {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-around;
 	list-style: none;
 	color: black;
@@ -78,7 +78,7 @@ nav {
 
 
 .navigation a {
-	display: none;
+	display: flex;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
@@ -92,7 +92,7 @@ nav {
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+	display: flex;
 }
 
 .active::before { 

@@ -1,17 +1,12 @@
-// get current year
-const currentYear = new Date().getFullYear();
-// inject into the element
-document.getElementById("year").textContent = currentYear;
-// select the element and update it text
-document.getElementById("lastModified").textContent = document.lastModified;
-
+const mainNav = document.querySelector('.navigation')
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+	mainNav.classList.toggle('show');
+	hamButton.classList.toggle('show');
 });
+
+
 
 
 const temples = [
@@ -24,8 +19,8 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
   },
   {
-    templeName: "Manti Utah",
-    location: "Manti, Utah, United States",
+    templeName: "ivory coast",
+    location: "abidjan",
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
@@ -33,7 +28,7 @@ const temples = [
   },
   {
     templeName: "Payson Utah",
-    location: "Payson, Utah, United States",
+    location: "free south africa",
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
@@ -145,30 +140,11 @@ function createTempleCard() {
     container.appendChild(card);
   });
 };
-  // filtering small temples
-  const smallTemples = document.querySelector("#small");
-  smallTemples.addEventListener("click", () => {
-  const smallTemples = temples.filter(temples => temples.location.includes("Utah"));
-  createTempleCard(smallTemples);
-});
+  
 
-const oldTemples = document.querySelector("#old");
-  oldTemples.addEventListener("click", () => {
-  const oldTemples = temples.filter(temples => temples.location.includes("Utah"));
-  createTempleCard(oldTemples);
-})
-
-  const largeTemples = document.querySelector("#large");
-  largeTemples.addEventListener("click", () => {
-  const largeTemples = temples.filter(temples => temples.location.includes("Utah"));
-  createTempleCard(largeTemples);
-});
-
-const newTemples = document.querySelector("#new");
-  newTemples.addEventListener("click", () => {
-  const newTemples = temples.filter(temples => temples.location.includes("Utah"));
-  createTempleCard(newTemples);
-});
-
-
-
+const currentYear = new Date().getFullYear();
+// inject into the element
+document.getElementById("year").textContent = currentYear;
+// select the element and update it text
+// get current year
+document.getElementById("lastModified").textContent = document.lastModified;

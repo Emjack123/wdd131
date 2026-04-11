@@ -1,36 +1,113 @@
-@media (min-width: 37.5em) {
+	
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+
+.main-header {
+  display: flex;
+  gap: 20px;
+  background-color: red;
+}
+
+h1 {
+	font-size: 1rem;
+	padding: 1rem;
+	background-color: #000;
+	color: black;
+	text-align: center;
+}
+
+p {
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 /0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	
+	color: white;
+}
+
+#menu::before {
+	content: "≡";   
+    
+}
+
+nav {
+	background-color: blue;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
 	h1 {
-		font-size: 2.5rem;
-		font-weight: 400;
-		margin-left: 0;
-		text-align: center;
-	}
-h2 {
 		font-size: 2rem;
-		text-align: center;
 	}
-
-	#menu {
-		display: none; /* hide hamburger button */
-		
-	}
-
 	.navigation {
-		flex-direction: row;
-		justify-content: left;
+		display: flex;
 	}
-
-	.navigation a {
-		display: block;
+	.navigation li {
+		display: block; /* change state in small view */
 		flex: 1 1 100%;
 	}
-
-	.stuff {
-		margin: 2rem auto;
-		
+	.navigation a {
+		text-align: center;
 	}
-	
-  #temple-container {
+	#menu {
+		display: none;
+	}
+}
+
+ 
+ 
+ 
+ #temple-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -85,7 +162,7 @@ h2 {
   
   }
   
-}
+
   
   
   
